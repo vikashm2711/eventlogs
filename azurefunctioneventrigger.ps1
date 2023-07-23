@@ -1,5 +1,5 @@
 # Set the path to your local GitHub repository containing the Python files
-$githubRepoPath = "C:\Path\To\Your\GitHub\Repo"
+$githubRepoPath = "https://raw.githubusercontent.com/vikashm2711/eventlogs/main/eventappfunctioncode/"
 
 # Read the deployment parameters from the JSON file
 $parametersFilePath = "C:\Path\To\Your\deploymentParameters.json"
@@ -29,7 +29,7 @@ $functionApp = Get-AzWebApp -ResourceGroupName $resourceGroupName -Name $functio
 $functionAppScmUri = $functionApp.ScmUri
 
 # Copy inint.py, requiremnt.txt, and functions.json to Function App's wwwroot
-$filesToCopy = @("inint.py", "requiremnt.txt", "functions.json")
+$filesToCopy = @("__init__.py", "requiremnt.txt", "function.json")
 
 foreach ($file in $filesToCopy) {
     $localFilePath = Join-Path $githubRepoPath $file
