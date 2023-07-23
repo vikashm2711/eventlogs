@@ -35,12 +35,6 @@
         "publicNetworkAccess": {
             "type": "String"
         },
-        "parameter1": {
-            "type": "String"
-        },
-        "parameter2": {
-            "type": "String"
-        },
         "tags": {
             "type": "Object"
         }
@@ -53,7 +47,7 @@
             "location": "[parameters('location')]",
             "tags": "[parameters('tags')]",
             "sku": {
-                "name": "[parameters('skuTier')]",
+                "name": "[parameters('skuName')]",
                 "tier": "[parameters('skuTier')]",
                 "capacity": "[parameters('skuCapacity')]"
             },
@@ -63,9 +57,7 @@
                 "zoneRedundant": "[parameters('zoneRedundant')]",
                 "minimumTlsVersion": "[parameters('minimumTlsVersion')]",
                 "disableLocalAuth": "[parameters('disableLocalAuth')]",
-                "publicNetworkAccess": "[parameters('publicNetworkAccess')]",
-                "parameter1": "[parameters('parameter1')]",
-                "parameter2": "[parameters('parameter2')]"
+                "publicNetworkAccess": "[parameters('publicNetworkAccess')]"
             }
         }
     ]
