@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "5807cfb0-41a6-4da6-b920-71d934d4a2af"
+        },
+        "name": {
+            "value": "motadatafunctionapp2307"
+        },
+        "location": {
+            "value": "East US"
+        },
+        "use32BitWorkerProcess": {
+            "value": false
+        },
+        "ftpsState": {
+            "value": "FtpsOnly"
+        },
+        "storageAccountName": {
+            "value": "motadatastorage2307"
+        },
+        "linuxFxVersion": {
+            "value": "Python|3.10"
+        },
+        "sku": {
+            "value": "Dynamic"
+        },
+        "skuCode": {
+            "value": "Y1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "hostingPlanName": {
+            "value": "ASP-motadata2307-996f"
+        },
+        "serverFarmResourceGroup": {
+            "value": "motadata2307"
+        },
+        "alwaysOn": {
+            "value": false
+        }
+    }
+}
