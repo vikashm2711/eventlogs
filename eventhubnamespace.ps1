@@ -15,7 +15,7 @@ $publicNetworkAccess = "Enabled"      # Replace with your desired public network
 # Authenticate with Azure
 # Connect-AzAccount
 # Set the Azure context to the desired subscription
-@$SubscriptionId = "5807cfb0-41a6-4da6-b920-71d934d4a2af"
+$SubscriptionId = "5807cfb0-41a6-4da6-b920-71d934d4a2af"
 Set-AzContext -SubscriptionId $SubscriptionId
 # Create a new resource group if it doesn't exist
 # New-AzResourceGroup -Name $resourceGroupName -Location $location -Force
